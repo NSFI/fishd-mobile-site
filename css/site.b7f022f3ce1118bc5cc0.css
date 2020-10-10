@@ -6278,6 +6278,7 @@ a.fishd-btn-sm {
 }
 .u-fished__doc {
   width: calc(100% - 360px);
+  max-width: 1200px;
 }
 .u-fished__simulator {
   margin-left: 40px;
