@@ -6129,11 +6129,51 @@ a.fishd-btn-sm {
   margin-right: 16px;
 }
 #color .aux-color-container .aux-color-item:nth-child(3) {
-  background-color: #FFAF0F;
+  background-color: #F2A60F;
   margin-right: 16px;
 }
 #color .aux-color-container .aux-color-item:nth-child(4) {
   background-color: #337EFF;
+}
+#color .ext-color-container {
+  display: flex;
+}
+#color .ext-color-container .ext-color-item {
+  height: 74px;
+  font-size: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  width: 25%;
+  border-radius: 4px;
+  color: #fff;
+}
+#color .ext-color-container .ext-color-item .value {
+  font-size: 12px;
+  line-height: 24px;
+}
+#color .ext-color-container .ext-color-item:nth-child(1) {
+  background-color: #F260B6;
+  margin-right: 16px;
+}
+#color .ext-color-container .ext-color-item:nth-child(2) {
+  background-color: #8875FF;
+  margin-right: 16px;
+}
+#color .ext-color-container .ext-color-item:nth-child(3) {
+  background-color: #33BBFF;
+  margin-right: 16px;
+}
+#color .ext-color-container .ext-color-item:nth-child(4) {
+  background-color: #3DD9AF;
+  margin-right: 16px;
+}
+#color .ext-color-container .ext-color-item:nth-child(5) {
+  background-color: #AACC00;
+  margin-right: 16px;
+}
+#color .ext-color-container .ext-color-item:nth-child(6) {
+  background-color: #FFE23D;
 }
 #color .neu-color-container {
   display: flex;
@@ -6166,10 +6206,15 @@ a.fishd-btn-sm {
   border-radius: 4px 4px 0 0;
 }
 #color .neu-color-container .left .neu-color-item:nth-child(2) {
-  background-color: #666666;
+  background-color: #333333;
   margin-right: 12px;
 }
 #color .neu-color-container .left .neu-color-item:nth-child(3) {
+  background-color: #666666;
+  margin-right: 12px;
+  border-radius: 0 0 4px 4px;
+}
+#color .neu-color-container .left .neu-color-item:nth-child(4) {
   background-color: #999999;
   margin-right: 12px;
   border-radius: 0 0 4px 4px;
@@ -6182,12 +6227,18 @@ a.fishd-btn-sm {
 }
 #color .neu-color-container .right .neu-color-item:nth-child(2) {
   color: #333;
-  background-color: #F2F2F5;
+  background-color: #E1E3E6;
   margin-right: 12px;
 }
 #color .neu-color-container .right .neu-color-item:nth-child(3) {
   color: #333;
-  background-color: #F7F7FA;
+  background-color: #F2F3F5;
+  border-radius: 0 0 4px 4px;
+}
+#color .neu-color-container .right .neu-color-item:nth-child(4) {
+  color: #333;
+  background-color: #F7F8FA;
+  margin-right: 12px;
   border-radius: 0 0 4px 4px;
 }
 
@@ -6277,47 +6328,53 @@ a.fishd-btn-sm {
   display: flex;
 }
 .u-fished__doc {
-  width: calc(100% - 360px);
+  width: calc(100% - 494px);
   max-width: 1200px;
 }
 .u-fished__simulator {
-  margin-left: 40px;
   flex: 0 0 auto;
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
   margin-top: 80px;
-  width: 320px;
-  height: 570px;
-  background: url(../img/db4118e83acf2cced49751874032e17f.png) no-repeat;
+  margin-left: 10px;
+  width: 474px;
+  height: 890px;
+  background: url(../img/38042c0132ebc02c56964966eb0a835c.png) no-repeat;
   background-size: 100% 100%;
   border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .u-fished__simulator .u-address {
   position: absolute;
-  top: 28px;
-  left: 20px;
+  top: 96px;
+  left: 80px;
   font-size: 12px;
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 340px;
+  height: 30px;
+  cursor: pointer;
 }
-.u-fished__simulator .u-refresh {
+.u-fished__simulator .u-back {
   position: absolute;
-  top: 26px;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-  background-color: #e5e5e6;
+  bottom: 110px;
+  left: 90px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.u-fished__simulator .u-next {
+  position: absolute;
+  bottom: 110px;
+  left: 160px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .u-fished__simulator .u-iframe {
   position: absolute;
-  left: 0;
-  top: 60px;
-  width: 320px;
-  height: 472px;
+  left: 68px;
+  top: 136px;
+  width: 360px;
+  height: 606px;
 }
 .u-navigation-btm {
   font-size: 14px;
@@ -9242,6 +9299,7 @@ mark {
 }
 html,
 body {
+  font-family: PingFangSC-Medium;
   height: 100%;
 }
 .drawer-handle {
@@ -9350,6 +9408,7 @@ body {
   }
 }
 .app .fish-header .nav-item {
+  font-family: PingFangSC-Medium;
   font-size: 16px;
   margin: 0 0 0 20px;
   float: left;
