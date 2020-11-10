@@ -1333,8 +1333,9 @@ a.fishd-btn-sm {
   align-items: center;
 }
 .u-home .content-wrapper .banner .logo {
-  width: 440px;
-  height: 440px;
+  transform: translateX(40px);
+  width: 500px;
+  height: 500px;
 }
 .u-home .content-wrapper .banner .title {
   font-size: 36px;
@@ -1484,6 +1485,7 @@ a.fishd-btn-sm {
   color: #65676e;
 }
 .u-home .content-wrapper .footer .link-item {
+  font-family: PingFangSC-Regular;
   font-size: 14px;
   color: #fff;
   display: inline-block;
@@ -1495,16 +1497,22 @@ a.fishd-btn-sm {
   margin-right: 50px;
 }
 .u-home .content-wrapper .footer .github {
+  font-family: PingFangSC-Regular;
   border-top: 1px solid #404349;
   padding: 15px 0;
 }
+.u-home .content-wrapper .footer .github a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .u-home .content-wrapper .footer .github img {
+  display: block;
   height: 20px;
   position: relative;
-  top: -5px;
 }
 .u-home .content-wrapper .footer .github span {
-  display: inline-block;
+  display: block;
   margin-left: 8px;
   font-size: 16px;
   color: #fff;
@@ -6603,7 +6611,6 @@ a.fishd-btn-sm {
 }
 
 .content {
-  background: url(//ysf.nosdn.127.net/zeenqqdsasgclvvedsbvueqvkzpufgoj) top right no-repeat;
   vertical-align: top;
   padding: 60px 40px 60px 60px;
   border-left: 1px solid #ebedf0;
@@ -6694,14 +6701,14 @@ a.fishd-btn-sm {
   flex: 0 0 auto;
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
-  margin-top: 80px;
+  top: 125px;
+  transform: translateY(-30px);
+  margin-top: 0px;
   margin-left: 10px;
   width: 474px;
   height: 890px;
   background: url(../img/38042c0132ebc02c56964966eb0a835c.png) no-repeat;
   background-size: 100% 100%;
-  border-radius: 6px;
 }
 .u-fished__simulator .u-address {
   position: absolute;
@@ -9636,6 +9643,9 @@ mark {
 /* stylelint-disable at-rule-no-unknown */
 
 /* stylelint-disable at-rule-no-unknown */
+.fishd-popover-inner {
+  box-shadow: 0 10px 30px 0 rgba(23, 23, 26, 0.15);
+}
 * {
   margin: 0;
   padding: 0;
@@ -9767,7 +9777,7 @@ body {
   }
 }
 .app .fish-header .nav-item {
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Regular;
   font-size: 16px;
   margin: 0 0 0 20px;
   float: left;
