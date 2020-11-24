@@ -9668,7 +9668,7 @@ mark {
 }
 html,
 body {
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Regular;
   height: 100%;
 }
 .drawer-handle {
@@ -9758,6 +9758,15 @@ body {
   border-radius: 4px;
   transition: all 0.3s;
 }
+.app .fish-header .search-box input::-webkit-input-placeholder {
+  color: #C4C4CC;
+}
+.app .fish-header .search-box input::-moz-input-placeholder {
+  color: #C4C4CC;
+}
+.app .fish-header .search-box input::-ms-input-placeholder {
+  color: #C4C4CC;
+}
 .app .fish-header .search-box input:focus {
   outline: 0;
 }
@@ -9802,7 +9811,7 @@ body {
 }
 .app .fish-header .nav-item a {
   text-decoration: none;
-  color: #383838;
+  color: #43434D;
   display: block;
   padding: 0 10px;
   transition: all ease 0.3s;
